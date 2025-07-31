@@ -1,0 +1,156 @@
+body{
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  height: auto;
+}
+.right {
+  width: 80%;
+  height: auto;
+}
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.left {
+  width: 20%;
+  min-height: 1000px;
+  float: left;
+}
+.aktual{
+  font-size: 15px;
+}
+a{
+  text-decoration: none;
+}
+h3{
+  margin: 0;
+  margin-bottom: 10px;
+}
+h4{
+  font-size: 27px;
+}
+.index-p{
+  width: 50%;
+  font-size: 25px;
+  text-align: justify;
+}
+#about{
+  font-size: 55px
+}
+#mainphoto{
+  width: 50%;
+  height: auto;
+  border-radius: 25px;
+  float: left;
+}
+.header{
+  width: 100%;
+  height: 105px;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  float: left;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+#header {
+  text-decoration: none;
+  font-size: 35px;
+  margin: 0;
+  margin-top: 30px;
+  float: left;
+  color: black;
+  padding-left: 10px;
+}
+
+
+.aktual li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+}
+.aktual ul{
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  margin-right: 20%;
+  padding: 0;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.linka{
+  display: inline-block;
+  position: relative;
+}
+.linka::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 30px;
+  background-color: black;
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-out;
+}
+.linka:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+.imgs{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.imgs > div{
+  background-color: #f1f1f1;
+  width: 30%;
+  margin: 10px;
+  line-height: auto;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+.imgs > div > img{
+  width: 100%;
+  text-align: center;
+}
+.imgs > div > .mouseimg{
+  width: 40%;
+  transform: translate(0,15%);
+}
+.imgs > div > .applepay{
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%,0);
+  margin-bottom: 20px;
+}
+.imgs > div > .mappointer{
+  width: 90%;
+  border-radius: 13px;
+  transform: translate(0, 6%);
+}
+.footer{
+  height: 40px;
+  background-color: rgb(172, 172, 172);
+  width: 100%;
+}
